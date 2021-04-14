@@ -84,4 +84,7 @@
    mv file1.txt /data/cbarrett/evolution_class        # this command moves file1 into the evolution class folder. We specify the relative path for the files, because           
                                                       # we are already in the directory where it sits, and the full or absolute path to the destination directory
    ```
-   
+12. We can also move a file from one directory to another without being in that particular directory
+   ```bash
+   mv /data/cbarrett/genomics_class/file1.txt /data/cbarrett/evolution_class
+   ```
