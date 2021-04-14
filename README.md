@@ -22,6 +22,7 @@
    cd
    
    #### Try the following -- note the space between cd and what follows:
+   ```bash
    cd ~     # Take me home (country roads)<br>
    cd.      # Take me to where I am<br>
    cd ..    # Take me up one level<br>
@@ -31,5 +32,5 @@
    cd ~/documents   # take me home, then into 'documents'<br>
    cd ../.. # take me up two levels<br>
    cd ../reads   # take me up one, then into 'reads'<br>
-  
+  ```
   
