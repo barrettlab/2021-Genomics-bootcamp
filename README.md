@@ -14,15 +14,16 @@
   Downstream phylogenetic and population genetic applications<br>
 
 ### Some basic, essential unix commands
-#### 1. Where am I?
+1. Where am I?
    ```bash
    pwd
    ```
    #### Present Working directory: This command tells you where you are in the directory structure
    
-#### 2. How do I get someplace else?            Change Directory
+2. How do I get someplace else?            Change Directory
+   ```bash
    cd
-   
+   ```
    #### Try the following -- note the space between cd and what follows:
    ```bash
    cd ~     # Take me home (country roads)<br>
@@ -35,4 +36,12 @@
    cd ../.. # take me up two levels<br>
    cd ../reads   # take me up one, then into 'reads'<br>
   ```
+ 3. What is in this directory?  pwd
+  ```bash
+  ls        # LIST the contents of a directory<br>
+  ls -l     # list the 'long version' including file sizes, permissions, etc.<br>
+  ls -a     # list all contents, including hidden files<br>
+  ```
+  
+ 4. kdsmnlkdsmnlkfsmdlkds
   
