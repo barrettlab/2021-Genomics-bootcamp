@@ -24,7 +24,12 @@
    #### Try the following -- note the space between cd and what follows:
    cd ~     # Take me home (country roads)
    cd.      # Take me to where I am
-   cd ..
-   
+   cd ..    # Take me up one level
+   cd /     # take me to the root directory
+   cd -     # take me to the place I was before
+   cd /data/cbarrett/Corallorhiza_2021_08_05/reads/filtered reads    # This is an 'absolute' path. The initial '/' is the root, followed by /data/etc...
+   cd ~/documents   # take me home, then into 'documents'
+   cd ../.. # take me up two levels
+   cd ../reads   # take me up one, then into 'reads'
    #### Change Directory
   
