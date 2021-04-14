@@ -35,7 +35,9 @@
    cd ~/documents   # take me home, then into 'documents'<br>
    cd ../.. # take me up two levels<br>
    cd ../reads   # take me up one, then into 'reads'<br>
-  ```
+   ```
+   ####
+
 3. What is in this directory?  pwd
    ```bash
    ls        # LIST the contents of a directory<br>
