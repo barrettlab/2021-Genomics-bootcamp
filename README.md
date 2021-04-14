@@ -18,7 +18,7 @@
    pwd
    #### Present Working directory: This command tells you where you are in the directory structure
    
-#### 2. How do I get someplace else?
+#### 2. How do I get someplace else?            Change Directory
    cd
    
    #### Try the following -- note the space between cd and what follows:
@@ -31,5 +31,5 @@
    cd ~/documents   # take me home, then into 'documents'<br>
    cd ../.. # take me up two levels<br>
    cd ../reads   # take me up one, then into 'reads'<br>
-   #### Change Directory
+  
   
