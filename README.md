@@ -15,7 +15,9 @@
 
 ### Some basic, essential unix commands
 #### 1. Where am I?
+   ```bash
    pwd
+   ```
    #### Present Working directory: This command tells you where you are in the directory structure
    
 #### 2. How do I get someplace else?            Change Directory
