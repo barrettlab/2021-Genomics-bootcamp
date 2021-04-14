@@ -50,5 +50,25 @@
    mkdir genomics_class   # make a new directory
    mkdir genomics_class bioinformatics_class evolution_class    # make three new directories
    ```
-5. 
+5. How do I make a new, blank text file?  touch
+   ```bash
+   touch file1.txt file2.txt file3.txt   # make three new text files
+   ```
+6. How do I print something to the screen?
+   #### to print the conents of a file to the screen:
+   ```bash
+   cat file1.txt
+   ```
+   #### OK, if there is a FASTQ file with > 1 million lines, cat isn't the way to go...
+7. What if I want to scrool through a file?  less
+   ```bash
+   less file1.txt   # then, press space bar to scroll down one screen (page down)
+   ```
+8. What if I want to just look at the beginning or end of a file?  head   or   tail
+   ```bash
+   head file1.txt         # shows the 1st 100 lines of a file
+   head -n 20 file1.txt   # shows the 1st 20 lines of a file
+   tail -n 20 file1.txt   # shows the last 20 lines of a file
+   ```
+   
    
