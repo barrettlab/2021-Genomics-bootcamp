@@ -14,13 +14,11 @@
   Downstream phylogenetic and population genetic applications<br>
 
 ### Some basic, essential unix commands
-1. Where am I?
+1. Where am I? *pwd* = Present Working directory: This command tells you where you are in the directory structure
    ```bash
    pwd
-   ```
-   #### Present Working directory: This command tells you where you are in the directory structure
-   
-2. How do I get someplace else?            Change Directory
+   ```   
+2. How do I get someplace else?            Change Directory: *cd*
    ```bash
    cd
    ```
@@ -45,12 +43,12 @@
    ls -a     # list all contents, including hidden files<br>
    ```
   
-4. How do I make a new directory?  mkdir
+4. How do I make a new directory?  *mkdir*
    ```bash
    mkdir genomics_class   # make a new directory
    mkdir genomics_class bioinformatics_class evolution_class    # make three new directories
    ```
-5. How do I make a new, blank text file?  touch
+5. How do I make a new, blank text file?  *touch*
    ```bash
    touch file1.txt file2.txt file3.txt   # make three new text files
    ```
@@ -60,11 +58,11 @@
    cat file1.txt
    ```
    #### OK, if there is a FASTQ file with > 1 million lines, cat isn't the way to go...
-7. What if I want to scrool through a file?  less
+7. What if I want to scroll through a file?  *less*
    ```bash
-   less file1.txt   # then, press space bar to scroll down one screen (page down)
+   less file1.txt   # then, press space bar to scroll down one screen (page down) -- press *q* to exit 'less'
    ```
-8. What if I want to just look at the beginning or end of a file?  head   or   tail
+8. What if I want to just look at the beginning or end of a file?  *head*   or   *tail*
    ```bash
    head file1.txt         # shows the 1st 100 lines of a file
    head -n 20 file1.txt   # shows the 1st 20 lines of a file
