@@ -87,4 +87,13 @@
 12. We can also move a file from one directory to another without being in that particular directory
    ```bash
    mv /data/cbarrett/genomics_class/file1.txt /data/cbarrett/evolution_class
+   ### mv can also be used to rename files
+   mv file1.txt my_file1.txt     # This renames file1 my_file1
    ```
+#### Use extreme caution with 'mv'! Once you move it, it is gone, and you had better know where it is! Same goes for renaming files
+
+13. Instead we can COPY files to another location: cp
+```bash
+cp file1.txt /data/cbarrett/evolution_class
+```
+
