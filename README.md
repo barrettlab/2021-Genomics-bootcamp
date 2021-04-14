@@ -1,6 +1,6 @@
 # 2021-Genomics-bootcamp
 
-## Welcome to the 2021 WVU Genomic Bootcamp, part of the CPING Regional Network
+## Welcome to the 2021 WVU Genomic Bootcamp, part of the CPING Regional Network!
 
 ### We will cover a number of topics here:
   Basic UNIX Commands<br>
@@ -70,5 +70,18 @@
    head -n 20 file1.txt   # shows the 1st 20 lines of a file
    tail -n 20 file1.txt   # shows the last 20 lines of a file
    ```
-   
+9. How can I take the contents of a file and stick them into a new file? '>', or 'redirect, and '>>' or 'append'
+   ```bash
+   cat file1.txt > file2.txt                # stick the contents of file1 into a new file, called file2 (redirect)
+   cat file2.txt file3.txt >> file1.txt     # stick the contents of files2 & 3 on the end of file1 (append)
+   ```
+10. How do I make a list of all files in a folder? This could be helpful to set up name files for running batch scripts on a directory full of 200 FASTQ files
+   ```bash
+   ls genomics_class > genomics_class_filenames.txt
+   ```
+11. How do I move a file or directory to another location? mv
+   ```bash
+   mv file1.txt /data/cbarrett/evolution_class        # this command moves file1 into the evolution class folder. We specify the relative path for the files, because           
+                                                      # we are already in the directory where it sits, and the full or absolute path to the destination directory
+   ```
    
