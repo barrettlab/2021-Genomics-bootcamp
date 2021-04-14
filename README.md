@@ -100,6 +100,8 @@ cp file1.txt /data/cbarrett/evolution_class
 rm file1.txt              # removes a single file from existence
 rm -R genomics_class      # removes a directory from existence
 rm file1.txt file2.txt    # removes 2 files
+rm -i file1.txt file2.txt # "playing it safe" with interactive mode. This will prompt you y/n before removing each file listed
+rm -I *.txt               # Prompt once before removing more than three files
 ```
 15. What if I want to copy all text files (.txt) or fasta (.fasta) into a new directory?  **'*'** = WILDCARD.
 ```bash
