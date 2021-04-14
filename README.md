@@ -36,12 +36,17 @@
    cd ../.. # take me up two levels<br>
    cd ../reads   # take me up one, then into 'reads'<br>
   ```
- 3. What is in this directory?  pwd
-  ```bash
-  ls        # LIST the contents of a directory<br>
-  ls -l     # list the 'long version' including file sizes, permissions, etc.<br>
-  ls -a     # list all contents, including hidden files<br>
-  ```
+3. What is in this directory?  pwd
+   ```bash
+   ls        # LIST the contents of a directory<br>
+   ls -l     # list the 'long version' including file sizes, permissions, etc.<br>
+   ls -a     # list all contents, including hidden files<br>
+   ```
   
- 4. kdsmnlkdsmnlkfsmdlkds
-  
+4. How do I make a new directory?  mkdir
+   ```bash
+   mkdir genomics_class   # make a new directory
+   mkdir genomics_class bioinformatics_class evolution_class    # make three new directories
+   ```
+5. 
+   
