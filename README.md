@@ -13,7 +13,18 @@
   SNP processing, specifically using the ISSRseq plantform and data pipeline
   Downstream phylogenetic and population genetic applications
 
-### Some basic unix commands
-   #### Where am I?
+### Some basic, essential unix commands
+#### 1. Where am I?
    pwd
+   #### Present Working directory: This command tells you where you are in the directory structure
+   
+#### 2. How do I get someplace else?
+   cd
+   
+   #### Try the following -- note the space between cd and what follows:
+   cd ~     # Take me home (country roads)
+   cd.      # Take me to where I am
+   cd ..
+   
+   #### Change Directory
   
