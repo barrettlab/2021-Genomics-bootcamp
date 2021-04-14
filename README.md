@@ -103,10 +103,10 @@ rm file1.txt file2.txt    # removes 2 files
 ```
 15. What if I want to copy all text files (.txt) or fasta (.fasta) into a new directory?  **'*'** = WILDCARD.
 ```bash
-cp *.txt /data/cbarrett/evolution_class
-cp /data/cbarrett/genomics_class/*.txt /data/cbarrett/evolution_class
-cp * /data/cbarrett/evolution_class
-cp *1*.txt /data/cbarrett/evolution_class
+cp *.txt /data/cbarrett/evolution_class                                     # copy all text files to a new dir
+cp /data/cbarrett/genomics_class/*.txt /data/cbarrett/evolution_class       # same command using absolute paths
+cp * /data/cbarrett/evolution_class                                         # copy all files from current dir to a new dir
+cp *1*.txt /data/cbarrett/evolution_class                                   # copy all files containing a '1' in the name to a new dir
 ```
 
 
