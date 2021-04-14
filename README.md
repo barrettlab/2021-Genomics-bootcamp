@@ -14,11 +14,11 @@
   Downstream phylogenetic and population genetic applications<br>
 
 ### Some basic, essential unix commands
-1. Where am I? *pwd* = Present Working directory: This command tells you where you are in the directory structure
+1. Where am I? **pwd** = Present Working directory: This command tells you where you are in the directory structure
    ```bash
    pwd
    ```   
-2. How do I get someplace else?            Change Directory: *cd*
+2. How do I get someplace else?            Change Directory: **cd**
    ```bash
    cd
    ```
@@ -36,19 +36,19 @@
    ```
    ####
 
-3. What is in this directory?  pwd
+3. What is in this directory?  **ls**
    ```bash
    ls        # LIST the contents of a directory<br>
    ls -l     # list the 'long version' including file sizes, permissions, etc.<br>
    ls -a     # list all contents, including hidden files<br>
    ```
   
-4. How do I make a new directory?  *mkdir*
+4. How do I make a new directory?  **mkdir**
    ```bash
    mkdir genomics_class   # make a new directory
    mkdir genomics_class bioinformatics_class evolution_class    # make three new directories
    ```
-5. How do I make a new, blank text file?  *touch*
+5. How do I make a new, blank text file?  **touch**
    ```bash
    touch file1.txt file2.txt file3.txt   # make three new text files
    ```
@@ -58,17 +58,17 @@
    cat file1.txt
    ```
    #### OK, if there is a FASTQ file with > 1 million lines, cat isn't the way to go...
-7. What if I want to scroll through a file?  *less*
+7. What if I want to scroll through a file?  **less**
    ```bash
    less file1.txt   # then, press space bar to scroll down one screen (page down) -- press *q* to exit 'less'
    ```
-8. What if I want to just look at the beginning or end of a file?  *head*   or   *tail*
+8. What if I want to just look at the beginning or end of a file?  **head**   or   **tail**
    ```bash
    head file1.txt         # shows the 1st 100 lines of a file
    head -n 20 file1.txt   # shows the 1st 20 lines of a file
    tail -n 20 file1.txt   # shows the last 20 lines of a file
    ```
-9. How can I take the contents of a file and stick them into a new file? '>', or 'redirect, and '>>' or 'append'
+9. How can I take the contents of a file and stick them into a new file? '**>**', or 'redirect, and '**>>**' or 'append'
    ```bash
    cat file1.txt > file2.txt                # stick the contents of file1 into a new file, called file2 (redirect)
    cat file2.txt file3.txt >> file1.txt     # stick the contents of files2 & 3 on the end of file1 (append)
@@ -77,7 +77,7 @@
    ```bash
    ls genomics_class > genomics_class_filenames.txt
    ```
-11. How do I move a file or directory to another location? mv
+11. How do I move a file or directory to another location? **mv**
    ```bash
    mv file1.txt /data/cbarrett/evolution_class        # this command moves file1 into the evolution class folder. We specify the relative path for the files, because           
                                                       # we are already in the directory where it sits, and the full or absolute path to the destination directory
@@ -90,8 +90,17 @@
    ```
 #### Use extreme caution with 'mv'! Once you move it, it is gone, and you had better know where it is! Same goes for renaming files
 
-13. Instead we can COPY files to another location: cp
+13. Instead we can COPY files to another location: **cp**
 ```bash
 cp file1.txt /data/cbarrett/evolution_class
 ```
+14. And now for the DEADLIEST command in UNIX:  **rm**
+#### This command removes a file. Once it is gone, it is gone. there is no trash or recycle bin!
+```bash
+rm file1.txt              # removes a single file from existence
+rm -R genomics_class      # removes a directory from existence
+rm file1.txt file2.txt    # removes 2 files
+```
+15. What if I want to copy all text files (.txt) or fasta (.fasta) into a new directory?  **'*'** = WILDCARD.
+
 
