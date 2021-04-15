@@ -24,23 +24,23 @@
    ```
    #### Try the following -- note the space between cd and what follows:
    ```bash
-   cd ~     # Take me home (country roads)<br>
-   cd.      # Take me to where I am<br>
-   cd ..    # Take me up one level<br>
-   cd /     # take me to the root directory<br>
-   cd -     # take me to the place I was before<br>
-   cd /data/cbarrett/Corallorhiza_2021_08_05/reads/filtered reads    # This is an 'absolute' path. The initial '/' is the root, followed by /data/etc...<br>
-   cd ~/documents   # take me home, then into 'documents'<br>
-   cd ../.. # take me up two levels<br>
-   cd ../reads   # take me up one, then into 'reads'<br>
+   cd ~     # Take me home (country roads)
+   cd.      # Take me to where I am
+   cd ..    # Take me up one level
+   cd /     # take me to the root directory
+   cd -     # take me to the place I was before
+   cd /data/cbarrett/Corallorhiza_2021_08_05/reads/filtered reads    # This is an 'absolute' path. The initial '/' is the root, followed by /data/etc...
+   cd ~/documents   # take me home, then into 'documents'
+   cd ../.. # take me up two levels
+   cd ../reads   # take me up one, then into 'reads'
    ```
    ####
 
 3. What is in this directory?  **ls**
    ```bash
-   ls        # LIST the contents of a directory<br>
-   ls -l     # list the 'long version' including file sizes, permissions, etc.<br>
-   ls -a     # list all contents, including hidden files<br>
+   ls        # LIST the contents of a directory
+   ls -l     # list the 'long version' including file sizes, permissions, etc.
+   ls -a     # list all contents, including hidden files
    ```
   
 4. How do I make a new directory?  **mkdir**
