@@ -146,9 +146,9 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # no
 ```
 
 17. Searching and replacing. **grep**, **sed**, and **awk* 
-### These three commands will be among the most useful commands you ever learn!
-### Actually, each is like a little language of its own
-## Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
+#### These three commands will be among the most useful commands you ever learn!
+#### Actually, each is like a little language of its own
+### Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
 
 
 
