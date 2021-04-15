@@ -230,5 +230,12 @@ $ | all | Anchor | End of line
 grep [options] [regexp] [filename]
 ```
 #### 18B. SED = Stream Editor
-
+```bash
+### General syntax sor 'sed'
+sed 'operation/regular_expression/replacement/flags' filename     # note the use of single quotes!
+sed 's/foo/bar/' file1.txt                                        # this directly changes all instances of 'foo' to 'bar' in file1. 
+sed 's/foo/bar/' file1.txt > file2.txt                            # A safer alternative, that redirects the edited text to a new file2, while leaving file1 unchanged
+### We can use regex just as with grep.
+sed 's/\s/_/g' file1.txt > file2.txt                              # Replace all spaces (\s) with underscores. Note the use of '\' as an escape character, without it, it will remove 's' and replace with an underscore.
+```
 #### 18C. AWK = " Alfred Aho, Peter Weinberger, and Brian Kernighan" The authors who created it.
