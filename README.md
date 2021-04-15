@@ -24,12 +24,12 @@
    ```
    #### Try the following -- note the space between cd and what follows:
    ```bash
-   cd ~     # Take me home (country roads)
-   cd.      # Take me to where I am
+   cd ~     # (country roads) Take me home, to my home folder: ~/cbarrett = /home/cbarrett
+   cd .     # Take me to where I am
    cd ..    # Take me up one level
    cd /     # take me to the root directory
-   cd -     # take me to the place I was before
-   cd /data/cbarrett/Corallorhiza_2021_08_05/reads/filtered reads    # This is an 'absolute' path. The initial '/' is the root, followed by /data/etc...
+   cd -     # I had to find the passage back to the place I was before
+   cd /data/cbarrett/Corallorhiza_2021_08_05/reads/filtered reads    # This is an **'absolute' path**. The initial '/' is the **root**, followed by /data/etc...
    cd ~/documents   # take me home, then into 'documents'
    cd ../.. # take me up two levels
    cd ../reads   # take me up one, then into 'reads'
