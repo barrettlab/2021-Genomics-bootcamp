@@ -206,14 +206,14 @@ Regular Expression | Class | Type | Meaning
 $ | all | Anchor | End of line
 [...] | all | Character Set | Range of characters
 \* | all | Modifier | zero or more duplicates
-\< | Basic | Anchor | Beginning of word
-\> | Basic | Anchor | End of word
-\(..\) | Basic | Backreference | Remembers pattern
-\1..\9 | Basic | Reference | Recalls pattern
+\\< | Basic | Anchor | Beginning of word
+\\> | Basic | Anchor | End of word
+\\(..\\) | Basic | Backreference | Remembers pattern
+\\1..\\9 | Basic | Reference | Recalls pattern
 \+ | Extended | Modifier | One or more duplicates
 ? | Extended | Modifier | Zero or one duplicate
-\{M,N\} | Extended | Modifier | M to N Duplicates
+\\{M,N\} | Extended | Modifier | M to N Duplicates
 (...|...) | Extended | Anchor | Shows alteration
-\(...\|...\) | EMACS | Anchor | Shows alteration
-\w | EMACS | Character set | Matches a letter in a word
-\W | EMACS | Character set | Opposite of \w
+\\(...\\|...\\) | EMACS | Anchor | Shows alteration
+\\w | EMACS | Character set | Matches a letter in a word
+\\W | EMACS | Character set | Opposite of \\w
