@@ -232,10 +232,19 @@ grep [options] [regexp] [filename]
 #### 18B. SED = Stream Editor
 ```bash
 ### General syntax sor 'sed'
-sed 'operation/regular_expression/replacement/flags' filename     # note the use of single quotes!
+sed 'operation/regular_expression/replacement/flags' filename     # note the use of single quotes! The forward slash is the DELIMITER
 sed 's/foo/bar/' file1.txt                                        # this directly changes all instances of 'foo' to 'bar' in file1. 
 sed 's/foo/bar/' file1.txt > file2.txt                            # A safer alternative, that redirects the edited text to a new file2, while leaving file1 unchanged
 ### We can use regex just as with grep.
 sed 's/\s/_/g' file1.txt > file2.txt                              # Replace all spaces (\s) with underscores. Note the use of '\' as an escape character, without it, it will remove 's' and replace with an underscore.
+sed 's/\n/_/g' file1.txt > file2.txt                              # Replace all newlines (\n) with underscores. 
+sed 's/\t/\s/g' file1.txt > file2.txt                             # Replace all newlines (\t) with spaces (\s).
+sed 's/\([a-z]*\).*/\1/' file1.txt > file2.txt                    # You can also 'capture' what you find with (parentheses). Lets say you want to keep the first word you find in each line, then get rid of anything after that. (Think: I want to keep the first line of my fasta header but remove everything else)
+### the '\1' = the first match pattern you found. The second is '\2' etc.
+
+### The code below will do the following: 1) capture any pattern with 2 letters (and everything following), 2) then capture a second pattern with 2 letters and everything follwing, 3) substitute the second pattern for the first, and 4) substitute the first patternn for the second.
+sed 's/\([a-z][a-z]*\) \([a-z][a-z]*\)/\2 \1/' file1.txt > file2.txt      
+
+
 ```
 #### 18C. AWK = " Alfred Aho, Peter Weinberger, and Brian Kernighan" The authors who created it.
