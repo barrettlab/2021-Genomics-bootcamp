@@ -14,6 +14,7 @@
   Downstream phylogenetic and population genetic applications<br>
 
 ### some super helpful links and UNIX tutorials:
+  [A video tutorial by CPING's own James Beck, with his truly awesome Kentucky dialect](https://www.invasiongenomics.com/computing.html)<br>
   [A primer on UNIX and Perl](http://korflab.ucdavis.edu/Unix_and_Perl/current.html)<br>
   [UNIX for beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)<br>
   [A much fancier and more useful guide than the one I wrote. I have used this for inspiration here!](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html#gsc.tab=0)<br>
@@ -146,8 +147,7 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # no
 ```
 
 17. Searching and replacing. **grep**, **sed**, and **awk* 
-#### These three commands will be among the most useful commands you ever learn!
-#### Actually, each is like a little language of its own
+#### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
 ### Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
 
 
