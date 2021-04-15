@@ -154,6 +154,8 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # no
 
 ### REGULAR EXPRESSION GUIDE
 ### Anchors
+Regular expression | Matches:
+------------------ | --------
 ^A | "A" at the beginning of a line
 A$ | "A" at the end of a line
 A^ | "A^" anywhere on a line
@@ -161,7 +163,8 @@ $A | "$A" anywhere on a line
 ^^ | "^" at the beginning of a line
 $$ | "$" at the end of a line
 
-Regular Expression | 	Matches
+Regular Expression | Matches
+------------------ | --------
 [] | The characters "[]"
 [0] |	The character "0"
 [0-9] |	Any number
