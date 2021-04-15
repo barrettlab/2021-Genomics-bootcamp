@@ -214,6 +214,6 @@ $ | all | Anchor | End of line
 ? | Extended | Modifier | Zero or one duplicate
 \\{M,N\\} | Extended | Modifier | M to N Duplicates
 (...\|...) | Extended | Anchor | Shows alteration
-\\(...\\|...\) | EMACS | Anchor | Shows alteration
+\\(...\\|...\\) | EMACS | Anchor | Shows alteration
 \\w | EMACS | Character set | Matches a letter in a word
 \\W | EMACS | Character set | Opposite of \\w
