@@ -95,14 +95,14 @@
    ### mv can also be used to rename files
    mv file1.txt my_file1.txt     # This renames file1 my_file1
    ```
-#### Use extreme caution with 'mv'! Once you move it, it is gone, and you had better know where it is! Same goes for renaming files
+## Use extreme caution with 'mv'! Once you move it, it is gone, and you had better know where it is! Same goes for renaming files
 
 13. Instead we can COPY files to another location: **cp**
 ```bash
 cp file1.txt /data/cbarrett/evolution_class
 ```
 14. And now for the DEADLIEST command in UNIX:  **rm**
-#### This command removes a file. Once it is gone, it is gone. there is no trash or recycle bin!
+## This command (rm) removes a file. Once it is gone, it is gone. there is no trash or recycle bin!
 ```bash
 rm file1.txt              # removes a single file from existence
 rm -R genomics_class      # removes a directory from existence
