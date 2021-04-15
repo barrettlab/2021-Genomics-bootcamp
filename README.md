@@ -22,7 +22,7 @@
 
 
 ### Some basic, essential unix commands
-1. Where am I? **pwd** = Present Working directory: This command tells you where you are in the directory structure
+1. Where am I? **pwd** = Print Working directory: This command tells you where you are in the directory structure
    ```bash
    pwd
    ```   
@@ -44,14 +44,14 @@
    ```
    ####
 
-3. What is in this directory?  **ls**
+3. What is in this directory?  **ls** = List
    ```bash
    ls        # LIST the contents of a directory
    ls -l     # list the 'long version' including file sizes, permissions, etc.
    ls -a     # list all contents, including hidden files
    ```
   
-4. How do I make a new directory?  **mkdir**
+4. How do I make a new directory?  **mkdir** = Make Directory
    ```bash
    mkdir genomics_class   # make a new directory
    mkdir genomics_class bioinformatics_class evolution_class    # make three new directories
@@ -60,10 +60,11 @@
    ```bash
    touch file1.txt file2.txt file3.txt   # make three new text files
    ```
-6. How do I print something to the screen?
+6. How do I print something to the screen? **cat** = catalog or concatenate (depends on who you ask)
    #### to print the conents of a file to the screen:
    ```bash
-   cat file1.txt
+   cat file1.txt                          # prints the contents of file1 to screen
+   cat file1.txt file2.txt file3.txt      # prints files 1,2 and 3 to screen
    ```
    #### OK, if there is a FASTQ file with > 1 million lines, cat isn't the way to go...
 7. What if I want to scroll through a file?  **less**
