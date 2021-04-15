@@ -16,7 +16,7 @@
 ### some super helpful links and UNIX tutorials:
   [A primer on UNIX and Perl](http://korflab.ucdavis.edu/Unix_and_Perl/current.html)<br>
   [UNIX for beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)<br>
-  [A much fancier and more useful guide than the one I wrote](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html#gsc.tab=0)<br>
+  [A much fancier and more useful guide than the one I wrote. I have used this for inspiration here!](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html#gsc.tab=0)<br>
   [GitHub Markdown language -- how I wrote this tutorial](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 
@@ -134,6 +134,15 @@ uniq file1.txt | cat                    # pick out all the unique lines of file1
 cat uniq file1.txt                      # does the same thing as above
 sort -g file1.txt | uniq | wc -l | less     # sort lines in file1, find unique lines, count the # of unique lines, and display with 'less'
 sort -g file1.txt | uniq -c | wc -l | less  # sort lines in file1, find unique lines and how many of each, count the # of unique lines, and display with 'less'
+### OK, now let's get a little fancier...
+cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4
+### What did we do here?
+cat file1.txt                                                               # show or print contents of file1 to screen
+cat file1.txt | tr ' ' '\n'                                                 # now, translate all spaces to new lines (\n = newline)
+cat file1.txt | tr ' ' '\n' | sort                                          # now, sort all the new lines
+cat file1.txt | tr ' ' '\n' | sort | uniq -c                                # now, count all unique lines and how many of each
+cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n                      # now, sort each unique line based on the the frequency of each
+cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # now, look at the last 4 lines to see the most common ones
 ```
 
 
