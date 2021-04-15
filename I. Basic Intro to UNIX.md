@@ -222,10 +222,13 @@ $ | all | Anchor | End of line
 
 18. Searching, replacing, and "fishing" with: **grep**, **sed**, and **awk* 
 #### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
-#### GREP = Global Regular Expression Print
+#### 18A. GREP = Global Regular Expression Print
 [Here's a nice cheat sheet for GREPping](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php)<br>
 
 ```bash
 ### General syntax for 'grep'
 grep [options] [regexp] [filename]
 ```
+#### 18B. SED = Stream Editor
+
+#### 18C. AWK = " Alfred Aho, Peter Weinberger, and Brian Kernighan" The authors who created it.
