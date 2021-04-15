@@ -164,7 +164,8 @@ A^ | "A^" anywhere on a line
 $A | "$A" anywhere on a line
 ^^ | "^" at the beginning of a line
 $$ | "$" at the end of a line
-
+<br>
+### Number matches
 Regular Expression | Matches
 ------------------ | --------
 [] | The characters "[]"
@@ -179,8 +180,8 @@ Regular Expression | Matches
 [0-9-z] | Any number, or any character between "9" and "z".
 [0-9\-a\]] |	Any number, or a "-", a "a", or a "]". 
 "\" | This is called an **escape character**. 
-
-
+<br>
+### Wildcards, "anything" matches, and letter & number matches
 Regular Expression | Matches
 ------------------ | -------
 \* | Any line with an asterisk
@@ -199,7 +200,7 @@ Regular Expression | Matches
 \{4,8\} | Any line with "{4,8}"
 A{4,8} | Any line with "A{4,8}"
 
-
+### Other useful thing to know for regular expressions
 Regular Expression | Class | Type | Meaning
 ------------------ | ----- | ---- | -------
 . | all | Character Set | A single character (except newline)
