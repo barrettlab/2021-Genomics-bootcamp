@@ -14,9 +14,9 @@
   Downstream phylogenetic and population genetic applications<br>
 
 ### some super helpful links and UNIX tutorials:
-  [A primer on UNIX and Perl](http://korflab.ucdavis.edu/Unix_and_Perl/current.html)
-  [UNIX for beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
-  
+  [A primer on UNIX and Perl](http://korflab.ucdavis.edu/Unix_and_Perl/current.html)<br>
+  [UNIX for beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)<br>
+  [A much fancier and more useful guide than the one I wrote](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html#gsc.tab=0)<br>
   [GitHub Markdown language -- how I wrote this tutorial](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 
