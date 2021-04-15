@@ -128,6 +128,15 @@ wc -l file1.txt > words_in_file1.txt    # count # lines in file1, redirect to ne
 wc -l file1.txt | less                  # count # lines in file 1, but 'pipe' the command to 'less. This is how we start building pipelines!
 ### Translate -- tr
 tr '_' ' ' < file1.txt > file2.txt      # translate all underscores in file1 to spaces, and redirect to file 2. The less than sign directs INPUT. The greater than sign directs OUTPUT
+shuf file1.txt > file2.txt              # randomize the lines in file1, output to file2
+sort -g file1.txt | head                # sort the lines in file1, pipe to 'head' to view. the '-g' = 'general, which avoids 10 coming after 1 instead of 2.
+uniq file1.txt | cat                    # pick out all the unique lines of file1
+cat uniq file1.txt                      # does the same thing as above
+sort -g file1.txt | uniq | wc -l | less     # sort lines in file1, find unique lines, count the # of unique lines, and display with 'less'
+sort -g file1.txt | uniq -c | wc -l | less  # sort lines in file1, find unique lines and how many of each, count the # of unique lines, and display with 'less'
+```
+
+
 
 
 
