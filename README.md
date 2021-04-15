@@ -183,11 +183,11 @@ Regular Expression | Matches
 * | Any line with an asterisk
 \* | Any line with an asterisk
 \\ | Any line with a backslash
-^* | Any line starting with an asterisk
+^\* | Any line starting with an asterisk
 ^A* | Any line
 ^A\* | Any line starting with an "A*"
 ^AA* | Any line if it starts with one "A"
-^AA*B | Any line with one or more "A"'s followed by a "B"
+^AA\*B | Any line with one or more "A"'s followed by a "B"
 ^A\{4,8\}B | Any line starting with 4, 5, 6, 7 or 8 "A"'s
  | followed by a "B"
 ^A\{4,\}B | Any line starting with 4 or more "A"'s
