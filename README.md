@@ -120,6 +120,7 @@ cp * /data/cbarrett/evolution_class                                         # co
 cp *1*.txt /data/cbarrett/evolution_class                                   # copy all files containing a '1' in the name to a new dir
 ```
 16. Sorting files, counting, etc.
+[Taken from here](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-1.html#gsc.tab=0)
 ```bash
 ### Word count -- wc
 wc file1.txt      # count the number of "words" i.e. characters in a file
