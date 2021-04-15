@@ -153,6 +153,7 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # no
 
 
 ### REGULAR EXPRESSION GUIDE
+[Borrowed from here](https://www.grymoire.com/Unix/Regular.html)<br>
 ### Anchors
 Regular expression | Matches:
 ------------------ | --------
