@@ -117,5 +117,18 @@ cp /data/cbarrett/genomics_class/*.txt /data/cbarrett/evolution_class       # sa
 cp * /data/cbarrett/evolution_class                                         # copy all files from current dir to a new dir
 cp *1*.txt /data/cbarrett/evolution_class                                   # copy all files containing a '1' in the name to a new dir
 ```
+16. Sorting files, counting, etc.
+```bash
+### Word count -- wc
+wc file1.txt      # count the number of "words" i.e. characters in a file
+wc -l file1.txt   # count the number of LINES in a file. Uses: how many reads are in a fasta file (divide by 2)
+wc -c file1.txt   # count # of characters, but more specific notation
+wc -w file1.txt   # count # words in a file
+wc -l file1.txt > words_in_file1.txt    # count # lines in file1, redirect to new file with the output
+wc -l file1.txt | less                  # count # lines in file 1, but 'pipe' the command to 'less. This is how we start building pipelines!
+### Translate -- tr
+tr '_' ' ' < file1.txt > file2.txt      # translate all underscores in file1 to spaces, and redirect to file 2. The less than sign directs INPUT. The greater than sign directs OUTPUT
+
+
 
 
