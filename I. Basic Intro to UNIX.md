@@ -188,7 +188,7 @@ Regular Expression | Matches
 ------------------ | -------
 \* | Any line with an asterisk
 \\* | Any line with an asterisk
-\\ | Any line with a backslash
+\\\ | Any line with a backslash
 ^\* | Any line starting with an asterisk
 ^A\* | Any line
 ^A\* | Any line starting with an "A*"
