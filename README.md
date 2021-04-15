@@ -197,3 +197,23 @@ Regular Expression | Matches
 ^A\{4\}B | Any line starting with "AAAAB"
 \{4,8\} | Any line with "{4,8}"
 A{4,8} | Any line with "A{4,8}"
+
+
+Regular Expression | Class | Type | Meaning
+------------------ | ----- | ---- | -------
+. | all | Character Set | A single character (except newline)
+^ | all | Anchor | Beginning of line
+$ | all | Anchor | End of line
+[...] | all | Character Set | Range of characters
+\* | all | Modifier | zero or more duplicates
+\< | Basic | Anchor | Beginning of word
+\> | Basic | Anchor | End of word
+\(..\) | Basic | Backreference | Remembers pattern
+\1..\9 | Basic | Reference | Recalls pattern
+\+ | Extended | Modifier | One or more duplicates
+? | Extended | Modifier | Zero or one duplicate
+\{M,N\} | Extended | Modifier | M to N Duplicates
+(...|...) | Extended | Anchor | Shows alteration
+\(...\|...\) | EMACS | Anchor | Shows alteration
+\w | EMACS | Character set | Matches a letter in a word
+\W | EMACS | Character set | Opposite of \w
