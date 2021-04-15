@@ -148,8 +148,7 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n                      # no
 cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # now, look at the last 4 lines to see the most common ones
 ```
 
-17. Searching and replacing. **grep**, **sed**, and **awk* 
-#### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
+17. Regular Expressions (RegEx). 
 ### Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
 
 
@@ -220,3 +219,13 @@ $ | all | Anchor | End of line
 \\(...\\|...\\) | EMACS | Anchor | Shows alteration
 \\w | EMACS | Character set | Matches a letter in a word
 \\W | EMACS | Character set | Opposite of \\w
+
+18. Searching, replacing, and "fishing" with: **grep**, **sed**, and **awk* 
+#### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
+#### GREP = Global Regular Expression Print
+[Here's a nice cheat sheet for GREPping](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php)<br>
+
+```bash
+### General syntax for 'grep'
+grep [options] [regexp] [filename]
+```
