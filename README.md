@@ -212,7 +212,7 @@ $ | all | Anchor | End of line
 \\1..\\9 | Basic | Reference | Recalls pattern
 \+ | Extended | Modifier | One or more duplicates
 ? | Extended | Modifier | Zero or one duplicate
-\\{M,N\} | Extended | Modifier | M to N Duplicates
+\\{M,N\\} | Extended | Modifier | M to N Duplicates
 (...\|...) | Extended | Anchor | Shows alteration
 \\(...\\|...\) | EMACS | Anchor | Shows alteration
 \\w | EMACS | Character set | Matches a letter in a word
