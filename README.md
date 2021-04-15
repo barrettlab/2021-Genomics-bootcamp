@@ -195,4 +195,3 @@ Regular Expression | Matches
 ^A\{4\}B | Any line starting with "AAAAB"
 \{4,8\} | Any line with "{4,8}"
 A{4,8} | Any line with "A{4,8}"
-
