@@ -152,7 +152,29 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # no
 ### Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
 
 
-
+### REGULAR EXPRESSION GUIDE
+```bash
+### Anchors
+^A 	"A" at the beginning of a line
+A$ 	"A" at the end of a line
+A^ 	"A^" anywhere on a line
+$A 	"$A" anywhere on a line
+^^ 	"^" at the beginning of a line
+$$ 	"$" at the end of a line
+```
+Regular Expression | 	Matches
+[] | The characters "[]"
+[0] |	The character "0"
+[0-9] |	Any number
+[^0-9] |	Any character other than a number
+[-0-9] |	Any number or a "-"
+[0-9-] |	Any number or a "-"
+[^-0-9] | Any character except a number or a "-"
+[]0-9] |	Any number or a "]"
+[0-9]] |	Any number followed by a "]"
+[0-9-z] | Any number, or any character between "9" and "z".
+[0-9\-a\]] |	Any number, or a "-", a "a", or a "]". 
+"\" | This is called an **escape character**. 
 
 
 
