@@ -178,13 +178,14 @@ Regular Expression | Matches
 [0-9\-a\]] |	Any number, or a "-", a "a", or a "]". 
 "\" | This is called an **escape character**. 
 
+
 Regular Expression | Matches
 ------------------ | -------
-* | Any line with an asterisk
 \* | Any line with an asterisk
+\\* | Any line with an asterisk
 \\ | Any line with a backslash
 ^\* | Any line starting with an asterisk
-^A* | Any line
+^A\* | Any line
 ^A\* | Any line starting with an "A*"
 ^AA* | Any line if it starts with one "A"
 ^AA\*B | Any line with one or more "A"'s followed by a "B"
