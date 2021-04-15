@@ -13,6 +13,13 @@
   SNP processing, specifically using the ISSRseq plantform and data pipeline<br>
   Downstream phylogenetic and population genetic applications<br>
 
+### some super helpful links and UNIX tutorials:
+  [A primer on UNIX and Perl](http://korflab.ucdavis.edu/Unix_and_Perl/current.html)
+  [UNIX for beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+  
+  [GitHub Markdown language -- how I wrote this tutorial](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+
 ### Some basic, essential unix commands
 1. Where am I? **pwd** = Present Working directory: This command tells you where you are in the directory structure
    ```bash
