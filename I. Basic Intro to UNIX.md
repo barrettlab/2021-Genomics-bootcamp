@@ -188,7 +188,7 @@ Regular Expression | Matches
 [0-9]] |	Any number followed by a "]"
 [0-9-z] | Any number, or any character between "9" and "z".
 [0-9\-a\]] |	Any number, or a "-", a "a", or a "]". 
-"\" | This is called an **escape character**. 
+"\\" | This is called an **escape character**. 
 
 
 ### Wildcards, "anything" matches, and letter & number matches
@@ -251,9 +251,25 @@ sed 's/\t/\s/g' file1.txt > file2.txt                             # Replace all 
 sed 's/\([a-z]*\).*/\1/' file1.txt > file2.txt                    # You can also 'capture' what you find with (parentheses). Lets say you want to keep the first word you find in each line, then get rid of anything after that. (Think: I want to keep the first line of my fasta header but remove everything else)
 ### the '\1' = the first match pattern you found. The second is '\2' etc.
 
-### The code below will do the following: 1) capture any pattern with 2 letters (and everything following), 2) then capture a second pattern with 2 letters and everything follwing, 3) substitute the second pattern for the first, and 4) substitute the first patternn for the second.
+### The code below will do the following: 1) capture any pattern with 2 letters (and everything following), 2) then capture a second pattern with 2 letters and everything follwing, 3) substitute the second pattern for the first, and 4) substitute the first pattern for the second.
 sed 's/\([a-z][a-z]*\) \([a-z][a-z]*\)/\2 \1/' file1.txt > file2.txt      
 
 
 ```
 #### 18C. AWK = " Alfred Aho, Peter Weinberger, and Brian Kernighan" The authors who created it.
+
+```bash
+
+awk '{print $1}' file.fa > output.fa                          # capture the first "word" in fasta header, keep only that
+awk -v OFS=_ '{print $1,$2,$3}' rbcL.fasta > rbcLnew.fasta    # here, we take a file downloaded from GenBank, and print the accession#, Genus, and species
+```
+starting as:
+>EU391360.1 Corallorhiza odontorhiza voucher Freudenstein 2778a atpB-rbcL intergenic spacer, partial sequence; ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit (rbcL) gene, complete cds; and rbcL-accD intergenic spacer, partial sequence; chloroplast
+TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
+AGCGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTACGAAACCAAAG
+
+ending up with:
+
+
+
+```
