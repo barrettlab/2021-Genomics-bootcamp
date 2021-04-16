@@ -160,7 +160,7 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # no
 
 17. Searching, replacing, and "fishing" with: **grep**, **sed**, and **awk* 
 #### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
-#### 18A. GREP = Global Regular Expression Print
+#### GREP = Global Regular Expression Print
 [Here's a nice cheat sheet for GREPping](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php)<br>
 
 
