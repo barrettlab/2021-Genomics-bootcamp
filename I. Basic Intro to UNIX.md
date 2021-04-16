@@ -261,15 +261,22 @@ sed 's/\([a-z][a-z]*\) \([a-z][a-z]*\)/\2 \1/' file1.txt > file2.txt
 ```bash
 
 awk '{print $1}' file.fa > output.fa                          # capture the first "word" in fasta header, keep only that
-awk -v OFS=_ '{print $1,$2,$3}' rbcL.fasta > rbcLnew.fasta    # here, we take a file downloaded from GenBank, and print the accession#, Genus, and species
 ```
 starting as:
 >EU391360.1 Corallorhiza odontorhiza voucher Freudenstein 2778a atpB-rbcL intergenic spacer, partial sequence; ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit (rbcL) gene, complete cds; and rbcL-accD intergenic spacer, partial sequence; chloroplast
 TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
 AGCGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTACGAAACCAAAG
+```bash
+awk '{print $1"_"$2"_"$3;next}1' rbcL.fasta > rbcL3.fasta    # here, we take a file downloaded from GenBank, and print the accession#, Genus, and species
+```
+Aaaack it left a bunch of double underscores '__' a the end of each line of the sequence! Let's remove those with sed
 
+```bash
+sed 's/__//g' rbcL3.fasta > rbcl4.fasta ; head rbcL4.fasta
+```
 ending up with:
 
 
-
-```
+>EU391360.1_Corallorhiza_odontorhiza
+TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
+AGCGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTACGAAACCAAAG
