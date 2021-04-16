@@ -262,19 +262,23 @@ sed 's/\([a-z][a-z]*\) \([a-z][a-z]*\)/\2 \1/' file1.txt > file2.txt
 
 awk '{print $1}' file.fa > output.fa                          # capture the first "word" in fasta header, keep only that
 
+### OK, so let's say we just downloaded an rbcL FASTA sequence from Genbank, and want to edit the FASTA header to look like this:
+### Accesion.#_Genus_species
+
 starting as:
 >EU391360.1 Corallorhiza odontorhiza voucher Freudenstein 2778a atpB-rbcL intergenic spacer, partial sequence; ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit (rbcL) gene, complete cds; and rbcL-accD intergenic spacer, partial sequence; chloroplast
 TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
 AGCGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTACGAAACCAAAG
 
+### We can use awk to capture each space-separated 'field' in the header above:
+
 awk '{print $1"_"$2"_"$3;next}1' rbcL.fasta > rbcL3.fasta    # here, we take a file downloaded from GenBank, and print the accession#, Genus, and species
 
-Aaaack it left a bunch of double underscores '__' a the end of each line of the sequence! Let's remove those with sed
+Crap! it left a bunch of double underscores '__' a the end of each line of the sequence! Let's remove those with sed:
 
 sed 's/__//g' rbcL3.fasta > rbcl4.fasta ; head rbcL4.fasta
 
-ending up with:
-
+We end up with:
 
 >EU391360.1_Corallorhiza_odontorhiza
 TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
