@@ -157,9 +157,41 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n                      # no
 cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # now, look at the last 4 lines to see the most common ones
 ```
 
-17. Regular Expressions (RegEx). 
+17. Grep and Regular Expressions (RegEx). 
 ### Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
+```bash
+### general syntax for 'grep'
 
+grep -flag PATTERN FILENAME
+```
+### GREP flags
+[Borrowed from Here](https://bioinformaticsworkbook.org/Appendix/Unix/unix-basics-3grep.html#gsc.tab=0)
+Argument | Function
+-------- | --------
+-v | inverts the match or finds lines NOT containing the pattern.
+--color | colors the matched text for easy visualization
+-F | interprets the pattern as a literal string.
+-H,-h | print, don’t print the matched filename
+-i | ignore case for the pattern matching.
+-l | lists the file names containing the pattern (instead of match).
+-n | prints the line number containing the pattern (instead of match).
+-c | counts the number of matches for a pattern
+-o | only print the matching pattern
+-w | forces the pattern to match an entire word.
+-x | forces patterns to match the whole line.
+
+```bash
+grep -c ">" rbcL4.fasta | less						# find all fasta header lines, count them (-c), and pipe to less
+grep -e ">" rbcL4.fasta | less						# find all fasta header lines, (-e = exact match), and pipe to less
+grep -e ">" rbcL4.fasta > rbcL_headers.txt			# find all fasta header lines, and redirect to new file
+grep -v ">" rbcL4.fasta | less						# find all sequence line lines, (-v = anti-match), and pipe to less
+grep --color "ATG" rbcL4.fasta 						# highlight all search matches
+
+grep 'pattern1|pattern2|pattern3' FILENAME			# Any one pattern of the three (OR)
+grep 'pattern1' FILENAME | grep 'pattern2' | grep 'pattern3'		# All three patterns (AND)
+
+grep -rl "PATTERN" .								# find all files that contain a pattern (-r) in the current dir (.)
+```
 
 ### REGULAR EXPRESSION GUIDE
 [Borrowed from here](https://www.grymoire.com/Unix/Regular.html)<br>
