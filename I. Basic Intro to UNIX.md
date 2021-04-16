@@ -24,7 +24,8 @@
 ### Some basic, essential unix commands
 1. Where am I? **pwd** = Print Working directory: This command tells you where you are in the directory structure
    ```bash
-   pwd
+   pwd                    # Tells you your current directory
+   tree /home/cbarrett    # This gives a graphical display of your directory structure
    ```   
 2. How do I get someplace else?            Change Directory: **cd**
    ```bash
@@ -49,6 +50,11 @@
    ls        # LIST the contents of a directory
    ls -l     # list the 'long version' including file sizes, permissions, etc.
    ls -a     # list all contents, including hidden files
+   ### there are numerous 'flags' or 'options' with each UNIX command (e.g. -a, -l, -m, etc.). 
+   ### how do I know what these all mean and which ones to use?  --> 'man'! 'man' takes you to the manual for each command.
+   man ls
+   man cd
+   man pwd   # etc...
    ```
   
 4. How do I make a new directory?  **mkdir** = Make Directory
