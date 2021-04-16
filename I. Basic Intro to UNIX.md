@@ -283,4 +283,14 @@ We end up with:
 >EU391360.1_Corallorhiza_odontorhiza
 TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
 AGCGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTACGAAACCAAAG
+
+### If we want to keep the voucher information:
+awk '{print $1"_"$2"_"$3"_"$5"_"$6;next}1' rbcL.fasta > rbcL3.fasta    # here, we take a file downloaded from GenBank, and print the accession#, Genus, and species
+sed 's/__//g' rbcL3.fasta > rbcl4.fasta
+head rbcL4.fasta
+
+### We get:
+>EU391360.1_Corallorhiza_odontorhiza_Freudenstein_2778a
+TTGTTGTGAGAATTCTTAATTCATGAGTTGTAGGGAGGGACTTATGTCACCACAAACAGAAACTAAAGCA
+AGCGTTGGATTTAAAGCTGGTGTTAAAGATTACAAATTGACTTATTATACTCCTGACTACGAAACCAAAG
 ```
