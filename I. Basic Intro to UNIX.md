@@ -91,10 +91,14 @@
    ```bash
    ls genomics_class > genomics_class_filenames.txt
    ```
-11. How do I move a file or directory to another location? **mv**
+11. How do I move a file or directory to another location? **mv**. How do I **locate** or **find** files, or files that contain specific text?
    ```bash
    mv file1.txt /data/cbarrett/evolution_class        # this command moves file1 into the evolution class folder. We specify the relative path for the files, because           
                                                       # we are already in the directory where it sits, and the full or absolute path to the destination directory
+   ### OK, so I moved a file to another directory, but now I can't find it!
+   locate file1.txt
+   find /data/cbarrett -name *.txt                    # find all text files in /data/cbarrett using a wildcard
+   find /data/cbarrett f -name ">*"                   # find all files in /data/cbarrett that contain a caret '>' e.g. all fasta files
    ```
 12. We can also move a file from one directory to another without being in that particular directory
    ```bash
