@@ -53,7 +53,6 @@
    ### there are numerous 'flags' or 'options' with each UNIX command (e.g. -a, -l, -m, etc.). 
    ### how do I know what these all mean and which ones to use?  --> 'man'! 'man' takes you to the manual for each command.
    man ls
-   man cd
    man pwd   # etc...
    ```
   
