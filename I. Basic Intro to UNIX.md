@@ -157,7 +157,14 @@ cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n                      # no
 cat file1.txt | tr ' ' '\n' | sort | uniq -c | sort -n | tail -n 4          # now, look at the last 4 lines to see the most common ones
 ```
 
-17. Grep and Regular Expressions (RegEx). 
+
+17. Searching, replacing, and "fishing" with: **grep**, **sed**, and **awk* 
+#### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
+#### 18A. GREP = Global Regular Expression Print
+[Here's a nice cheat sheet for GREPping](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php)<br>
+
+
+17A. Grep and Regular Expressions (RegEx). 
 ### Here is where we start to get into **REGULAR EXPRESSIONS**. A lot of bioinformatics = fancy regular expressions.
 ```bash
 ### general syntax for 'grep'
@@ -193,7 +200,7 @@ grep 'pattern1' FILENAME | grep 'pattern2' | grep 'pattern3'		# All three patter
 grep -rl "PATTERN" .								# find all files that contain a pattern (-r) in the current dir (.)
 ```
 
-### REGULAR EXPRESSION GUIDE
+17B. REGULAR EXPRESSION GUIDE
 [Borrowed from here](https://www.grymoire.com/Unix/Regular.html)<br>
 ### Anchors
 Regular expression | Matches:
@@ -261,16 +268,8 @@ $ | all | Anchor | End of line
 \\w | EMACS | Character set | Matches a letter in a word
 \\W | EMACS | Character set | Opposite of \\w
 
-18. Searching, replacing, and "fishing" with: **grep**, **sed**, and **awk* 
-#### These three commands will be among the most useful commands you ever learn. Actually, each is like a little language of its own
-#### 18A. GREP = Global Regular Expression Print
-[Here's a nice cheat sheet for GREPping](https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php)<br>
 
-```bash
-### General syntax for 'grep'
-grep [options] [regexp] [filename]
-```
-#### 18B. SED = Stream Editor
+17C. SED = Stream Editor
 ```bash
 ### General syntax sor 'sed'
 sed 'operation/regular_expression/replacement/flags' filename     # note the use of single quotes! The forward slash is the DELIMITER
@@ -288,7 +287,7 @@ sed 's/\([a-z][a-z]*\) \([a-z][a-z]*\)/\2 \1/' file1.txt > file2.txt
 
 
 ```
-#### 18C. AWK = " Alfred Aho, Peter Weinberger, and Brian Kernighan" The authors who created it.
+17D. AWK = " Alfred Aho, Peter Weinberger, and Brian Kernighan" The authors who created it.
 
 ```bash
 
